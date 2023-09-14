@@ -1,51 +1,60 @@
-# Analyzing Box Office Trends for Microsoft's New Movie Studio
+# Microsoft Movie Studio - Box Office Analysis
 
 ## Overview
 
-Welcome to the Film Analysis project! This repository contains the code, data, and presentation for our in-depth analysis of the movie industry. We aim to uncover valuable insights to guide decision-making for Microsoft's new movie studio.
+Microsoft, a technology giant, is venturing into the entertainment industry with the establishment of a new movie studio. This strategic move aims to capitalize on the growing success of original video content creation. The primary objective of this project is to analyze box office trends to guide Microsoft's movie production decisions, ensuring a successful entry into the market.
 
-## Project Summary
+## Business Background
 
-This project focuses on several key objectives:
+Microsoft's new movie studio enters the highly competitive movie production industry with a focus on creating films that both creatively engage audiences and generate substantial box office revenue. Challenges include fierce competition, meeting diverse audience preferences, and leveraging Microsoft's technological expertise. Success hinges on producing high-quality, innovative content that resonates with viewers both creatively and financially.
 
-1. Analyzing the relationship between production budgets and box office revenue.
-2. Exploring the revenue performance of different movie genres.
-3. Investigating how the timing of a movie's release influences box office revenue.
-4. Providing actionable recommendations for Microsoft's movie production decisions.
+## Data Science Objectives
 
-## Repository Navigation
+1. **Analyze Budget vs. Revenue Relationship:** Investigate how production budgets influence box office success.
+2. **Explore Genre-Based Revenue Performance:** Examine how different movie genres correlate with box office revenue.
+3. **Analyze the Influence of Release Time on Revenue:** Explore how the timing of a movie's release impacts its box office earnings.
+4. **Provide Actionable Insights for Movie Production:** Translate analysis findings into actionable recommendations for Microsoft's movie production decisions.
 
-- **data/:** This directory contains the dataset used for the analysis.
-- **index_project.ipynb** Jupyter notebooks detailing the data analysis process.
-- **presentations/:** The presentation file summarizing our findings.
-- **images/:** Any images or visualizations used in the presentation.
-- **README.md:** You're currently reading it! This file provides an overview of the project and repository.
+## Data Understanding
 
-## Presentation
+The project utilizes data from movie databases, encompassing attributes like production budgets, genres, release dates, and worldwide box office earnings. The primary target variable is "worldwide gross" (box office revenue), and key data properties include numerical budgets, categorical genres, date-based release dates, and continuous revenue values.
 
-For a detailed presentation of our findings, please refer to the [Presentation](presentation/) folder. The presentation provides a concise summary of the analysis, key insights, and recommendations.
+## Data Analysis
 
-## Data Sources
+- **Univariate and Bivariate EDA:** Strong correlations were found between production budgets and revenue in this case the worldwide revenue and domestic revenue. Profit was also explored so as to see if it had a relationship with production budget and strong positive corelation was seen.
+![correlation diagram](images/scatterplot.png)
 
-- The Movie Database (TMDB)
-- The Numbers (tn) budget data
+- **Top-Performing Genres:** Adventure, animation, fantasy, and family genres tend to generate the highest total revenue (worldwide gross) and profits. These genres consistently perform well at the box office, making them lucrative choices for movie production.
 
-## Contributors
+- **Prolific Genres:** The genres with the most movies produced are drama and comedy. This suggests that many movies include these genres as sub-genres or feature elements of drama and comedy within other genres.
+![bar graph](images/bargraph.png)
+
+- **Optimal Release Timing:** Months like December, May, April, and November were identified as optimal for movie releases. Months like May, July, and June exhibit taller boxes in the box plots, indicating higher revenue variability among movies released during these months. Box office performance during these months can be less predictable due to wider spreads of revenue values (interquartile range or IQR). Factors contributing to this variability include competition from other blockbuster releases, varying audience preferences, and major movie events or holidays.
+![boxplot diagram](images/boxplot.png)
+
+## Recommendations
+
+1. **Strategic Budget Allocation:** Allocate production budgets strategically to maximize returns.
+2. **Genre Focus:** Prioritize genres with a history of strong box office performance.
+3. **Release Timing Strategy:** Plan movie releases carefully, capitalizing on optimal months.
+4. **Investigate Exceptional Performances:** Study and replicate successful strategies.
+5. **Continuous Market Research:** Stay updated on audience preferences.
+6. **Collaboration and Advanced Analytics:** Collaborate with industry experts and explore advanced analytics.
+
+## Next Steps
+
+- **Enhance Data Collection:** Collect additional data, including audience feedback and demographic information.
+- **Ongoing Market Monitoring:** Continuously monitor industry trends and adapt strategies accordingly.
+
+By following these recommendations and maintaining a data-driven, adaptable approach, Microsoft's new movie studio can position itself for success in the dynamic and competitive movie production industry.
+
+## Authors
 
 - Sammy Kariuki Kimani
 
-## Instructions
 
-To navigate through this repository effectively, follow these steps:
 
-1. Explore the [notebooks](index_project.ipynb) directory to access Jupyter notebooks containing the data analysis process.
-2. Check out the [data](data/) folder for the dataset used in the analysis.
-3. Review the [presentation](presentations/) folder for a detailed overview of our findings and recommendations.
 
-## Commit History
 
-We maintain a clean and informative commit history to track the progress of our project.
-
-## Note
 Thank you for visiting our Film Analysis project repository!
 
