@@ -52,8 +52,29 @@ By following these recommendations and maintaining a data-driven, adaptable appr
 
 - Sammy Kariuki Kimani
 
+## Repository Structure
+
+The project repository is organized as follows:
+
+- 📁 **data**: Contains datasets used for analysis.
+  - 📄 `tmdb.movies.csv`: The main dataset used for analysis.
+  - 📄 `tn.movie_budgets.csv`: Additional datasets for reference.
+
+- 📁 **images**: Contains visualizations and plots.
+  - 📄 `bargraph.png` : image of the bar graph
+  - 📄 `boxplot.png`  : image of the boxplot
+  - 📄 `histogram.png`: image of the boxplot
+  - 📄 `scatterplot.png`: image of the boxplot
+
+  
+- 📁 **presentation**: Presentation slides summarizing the project.
+  - 📄 `project report.pdf`: The document containing the detailed information concerning the analysis
+  -  📄 `project slides.pdf`: This is a document that contains slides that are a summary of the analysis.
 
 
+- 📄 `README.md`: This file providing an overview of the project and repository structure.
+
+- 📊 **index_project.ipynb**: Jupyter notebooks for data analysis.
 
 
 Thank you for visiting our Film Analysis project repository!
